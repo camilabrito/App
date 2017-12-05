@@ -3,39 +3,45 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1"
     tools:context="com.emprego.app.ListActivity">
-
-
-
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
         <TextView
             android:id="@+id/texto_titulo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vaga de Analista de Sistemas"
             android:textSize="20sp"
-            android:textStyle="bold" />
-
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
         <TextView
             android:id="@+id/texto_data"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Data: 01/12/2017 até 11/12/2017"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Data:01/12/2017 até 24/05/201"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="27dp" />
-
-
-        <Button
-            android:id="@+id/btn_Candidatar"
-            android:layout_width="177dp"
-            android:layout_height="wrap_content"
-            android:text="Candidatar -se"
-            android:layout_marginLeft="190dp"
-            tools:layout_editor_absoluteX="207dp"
-            tools:layout_editor_absoluteY="49dp"
-            />
-
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+         <Button
+             android:id="@+id/btn_Candidatar"
+             android:layout_toRightOf="@+id/layout_linear"
+             android:layout_weight="1"
+             android:layout_marginTop="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Candidatar-se" />
 </LinearLayout>
