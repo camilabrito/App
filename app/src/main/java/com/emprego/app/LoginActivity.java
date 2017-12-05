@@ -14,13 +14,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final ArrayList<Itens_da_lista> lista_vagas = new ArrayList<>();
-        lista_vagas.add(new Itens_da_lista("Vaga de motorista", "Data: 21/11/2017"));
-        lista_vagas.add(new Itens_da_lista("Vaga de recepcionista", "Data: 22/11/2017"));
-        lista_vagas.add(new Itens_da_lista("Vaga de cobrador", "Data: 18/11/2017"));
-        lista_vagas.add(new Itens_da_lista("Vaga de manobrista", "Data: 16/11/2017"));
-        lista_vagas.add(new Itens_da_lista("Vaga de programador", "Data: 16/11/2017"));
-        lista_vagas.add(new Itens_da_lista("Vaga de analista de RH", "Data: 17/11/2017"));
+        final ArrayList<ListActivity> lista_vagas =new ArrayList<>();
+        lista_vagas.add(new ListActivity("Vaga de Analista de Sistemas", "Data: 01/12/2017 até 11/12/2017 "));
+        lista_vagas.add(new ListActivity("Vaga de Recepcionista", "Data: 22/11/2017 até 01/12/2017 "));
+        lista_vagas.add(new ListActivity("Vaga de Cobrador", "Data: 18/11/2017 até 22/11/2017 " ));
+        lista_vagas.add(new ListActivity("Vaga de Manobrista", "Data: 16/11/2017 até 19/11/2017 "));
+        lista_vagas.add(new ListActivity("Vaga de Programador", "Data: 16/11/2017 até 22/11/2017 "));
+        lista_vagas.add(new ListActivity("Vaga de Analista de RH", "Data: 17/11/2017 até 04/12/2017 "));
+        lista_vagas.add(new ListActivity("Vaga de Motorista", "Data: 17/11/2017até 02/12/2017 "));
+
 
         Adaptador_da_Lista adaptador = new Adaptador_da_Lista(this, lista_vagas);
         ListView lista_de_vagas = findViewById(R.id.lista_emprego);

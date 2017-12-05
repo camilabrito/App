@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emprego.app.ListActivity">
+
+
+
+        <TextView
+            android:id="@+id/texto_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaga de Analista de Sistemas"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/texto_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data: 01/12/2017 até 11/12/2017"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="27dp" />
+
+
+        <Button
+            android:id="@+id/btn_Candidatar"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="Candidatar -se"
+            android:layout_marginLeft="190dp"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="49dp"
+            />
+
+</LinearLayout>
